@@ -11,14 +11,25 @@
       type="image/x-icon"
     />
 
-    <!-- Tailwind css output -->
+    <!-- Tailwind css output dist  -->
     <link rel="stylesheet" href="./dist/assets/index-652b08a7.css" />
+    <!-- tailwind css dev  -->
+    <!-- <link rel="stylesheet" href="./public/styles/index.css" /> -->
+    <style>
+      .no-scroll-bar::-webkit-scrollbar {
+        display: none;
+      }
+      /* Hide scrollbar for IE, Edge and Firefox */
+      .no-scroll-bar {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+    </style>
   </head>
   <body>
-    <main class="max-w-md mx-auto">
+    <main class="max-w-md mx-auto my-8">
       <!-- header -->
-      <!-- header sticky -->
-      <section class="bg-zinc-900 p-4 text-white sticky top-0">
+      <section class="bg-zinc-900 p-4 text-white">
         <div class="flex justify-between">
           <!-- logo -->
           <a href="#" target="_blank">
@@ -101,144 +112,328 @@
           <!-- btns -->
         </div>
       </section>
-      <!-- header sticky -->
-      <!-- header stories -->
-      <section class="bg-zinc-800">
-        <!-- stories items -->
-        <div class="py-4 text-white relative flex gap-3 overflow-x-scroll">
-          <!-- my stories -->
-          <a href="#" class="grid place-items-center gap-y-2 relative">
-            <div class="w-[90px]">
-              <img
-                class="rounded-full border-2 border-zinc-800 p-1"
-                src="./dist/images/profile pic.jpg"
-                alt="actor vijay profile pic "
-              />
-            </div>
-            <svg
-              class="absolute text-blue-500 bg-white rounded-full bottom-9 right-0"
-              xmlns="http://www.w3.org/2000/svg"
-              width="28"
-              height="28"
-              viewBox="0 0 24 24"
-            >
-              <path
-                fill="currentColor"
-                d="M11 17h2v-4h4v-2h-4V7h-2v4H7v2h4v4Zm1 5q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z"
-              />
-            </svg>
-            <span class="text-sm text-ellipsis">Your story</span>
-          </a>
-          <!-- cdn storie -->
-          <a href="#" class="grid place-items-center gap-y-2">
-            <div
-              class="w-[90px] rounded-full bg-gradient-to-b from-pink-500 to-yellow-400"
-            >
-              <img
-                class="rounded-full p-[2.5px]"
-                src="./dist/images/cybderdudenetworks_profile.jpg"
-                alt="actor vijay profile pic "
-              />
-            </div>
-            <span class="text-sm text-ellipsis">CyberDude...</span>
-          </a>
-          <!-- actor vijay storie -->
-          <a href="#" class="grid place-items-center gap-y-2">
-            <div class="w-[90px]">
-              <img
-                class="rounded-full border-2 border-green-500 p-1"
-                src="./dist/images/profile_actor_vijay.jpg"
-                alt="actor vijay profile pic "
-              />
-            </div>
-            <span class="text-sm text-ellipsis">Vijay </span>
-          </a>
+      <!-- header  -->
+      <!-- body section -->
+      <section
+        class="max-w-md overscroll-auto overflow-y-scroll w-[auto] h-[75vh] no-scroll-bar"
+      >
+        <!-- header stories -->
+        <section class="bg-zinc-800">
+          <!-- stories items -->
+          <div class="py-4 text-white relative flex gap-3 overflow-x-scroll">
+            <!-- my stories -->
+            <a href="#" class="grid place-items-center gap-y-2 relative">
+              <div class="w-[90px]">
+                <img
+                  class="rounded-full border-2 border-zinc-800 p-1"
+                  src="./dist/images/profile pic.jpg"
+                  alt="actor vijay profile pic "
+                />
+              </div>
+              <svg
+                class="absolute text-blue-500 bg-white rounded-full bottom-9 right-0"
+                xmlns="http://www.w3.org/2000/svg"
+                width="28"
+                height="28"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M11 17h2v-4h4v-2h-4V7h-2v4H7v2h4v4Zm1 5q-2.075 0-3.9-.788t-3.175-2.137q-1.35-1.35-2.137-3.175T2 12q0-2.075.788-3.9t2.137-3.175q1.35-1.35 3.175-2.137T12 2q2.075 0 3.9.788t3.175 2.137q1.35 1.35 2.138 3.175T22 12q0 2.075-.788 3.9t-2.137 3.175q-1.35 1.35-3.175 2.138T12 22Z"
+                />
+              </svg>
+              <span class="text-sm text-ellipsis">Your story</span>
+            </a>
+            <!-- cdn storie -->
+            <a href="#" class="grid place-items-center gap-y-2">
+              <div
+                class="w-[90px] rounded-full bg-gradient-to-b from-pink-500 to-yellow-400"
+              >
+                <img
+                  class="rounded-full p-[2.5px]"
+                  src="./dist/images/cybderdudenetworks_profile.jpg"
+                  alt="actor vijay profile pic "
+                />
+              </div>
+              <span class="text-sm text-ellipsis">CyberDude...</span>
+            </a>
+            <!-- actor vijay storie -->
+            <a href="#" class="grid place-items-center gap-y-2">
+              <div class="w-[90px]">
+                <img
+                  class="rounded-full border-2 border-green-500 p-1"
+                  src="./dist/images/profile_actor_vijay.jpg"
+                  alt="actor vijay profile pic "
+                />
+              </div>
+              <span class="text-sm text-ellipsis">Vijay </span>
+            </a>
 
-          <!-- actor ajith storie -->
-          <a href="#" class="grid place-items-center gap-y-2">
-            <div class="w-[90px]">
-              <img
-                class="rounded-full border-2 border-green-500 p-1"
-                src="./dist/images/profile_actor_ajith.jpg"
-                alt="actor ajith profile pic "
-              />
-            </div>
-            <span class="text-sm text-ellipsis">Ajith </span>
-          </a>
+            <!-- actor ajith storie -->
+            <a href="#" class="grid place-items-center gap-y-2">
+              <div class="w-[90px]">
+                <img
+                  class="rounded-full border-2 border-green-500 p-1"
+                  src="./dist/images/profile_actor_ajith.jpg"
+                  alt="actor ajith profile pic "
+                />
+              </div>
+              <span class="text-sm text-ellipsis">Ajith </span>
+            </a>
 
-          <!-- actor suriya storie -->
-          <a href="#" class="grid place-items-center gap-y-2">
-            <div
-              class="w-[90px] rounded-full bg-gradient-to-b from-pink-500 to-yellow-400"
-            >
-              <img
-                class="rounded-full p-[2.5px]"
-                src="./dist/images/profile_actor_suriya.jpg"
-                alt="actor suriya profile pic "
-              />
-            </div>
-            <span class="text-sm text-ellipsis">Suriya</span>
-          </a>
+            <!-- actor suriya storie -->
+            <a href="#" class="grid place-items-center gap-y-2">
+              <div
+                class="w-[90px] rounded-full bg-gradient-to-b from-pink-500 to-yellow-400"
+              >
+                <img
+                  class="rounded-full p-[2.5px]"
+                  src="./dist/images/profile_actor_suriya.jpg"
+                  alt="actor suriya profile pic "
+                />
+              </div>
+              <span class="text-sm text-ellipsis">Suriya</span>
+            </a>
 
-          <!-- actor kamal_hassan storie -->
-          <a href="#" class="grid place-items-center gap-y-2">
-            <div
-              class="w-[90px] rounded-full bg-gradient-to-b from-pink-500 to-yellow-400"
-            >
-              <img
-                class="rounded-full p-[2.5px]"
-                src="./dist/images/profile_actor_kamal_haasan.jpg"
-                alt="actor kamal_hassan profile pic "
-              />
-            </div>
-            <span class="text-sm text-ellipsis">Kamal has... </span>
-          </a>
+            <!-- actor kamal_hassan storie -->
+            <a href="#" class="grid place-items-center gap-y-2">
+              <div
+                class="w-[90px] rounded-full bg-gradient-to-b from-pink-500 to-yellow-400"
+              >
+                <img
+                  class="rounded-full p-[2.5px]"
+                  src="./dist/images/profile_actor_kamal_haasan.jpg"
+                  alt="actor kamal_hassan profile pic "
+                />
+              </div>
+              <span class="text-sm text-ellipsis">Kamal has... </span>
+            </a>
 
-          <!-- actor rajini storie -->
-          <a href="#" class="grid place-items-center gap-y-2">
-            <div
-              class="w-[90px] rounded-full bg-gradient-to-b from-pink-500 to-yellow-400"
-            >
-              <img
-                class="rounded-full p-[2.5px]"
-                src="./dist/images/profile_actor_rajini.jpg"
-                alt="actor rajini profile pic "
-              />
-            </div>
-            <span class="text-sm text-ellipsis">Rajini Ka... </span>
-          </a>
+            <!-- actor rajini storie -->
+            <a href="#" class="grid place-items-center gap-y-2">
+              <div
+                class="w-[90px] rounded-full bg-gradient-to-b from-pink-500 to-yellow-400"
+              >
+                <img
+                  class="rounded-full p-[2.5px]"
+                  src="./dist/images/profile_actor_rajini.jpg"
+                  alt="actor rajini profile pic "
+                />
+              </div>
+              <span class="text-sm text-ellipsis">Rajini Ka... </span>
+            </a>
 
-          <!-- actress andrea storie -->
-          <a href="#" class="grid place-items-center gap-y-2">
-            <div
-              class="w-[90px] rounded-full bg-gradient-to-b from-pink-500 to-yellow-400"
-            >
-              <img
-                class="rounded-full p-[2.5px]"
-                src="./dist/images/profile_actress_andrea.jpg"
-                alt="actress andrea profile pic "
-              />
-            </div>
-            <span class="text-sm text-ellipsis">Andrea </span>
-          </a>
+            <!-- actress andrea storie -->
+            <a href="#" class="grid place-items-center gap-y-2">
+              <div
+                class="w-[90px] rounded-full bg-gradient-to-b from-pink-500 to-yellow-400"
+              >
+                <img
+                  class="rounded-full p-[2.5px]"
+                  src="./dist/images/profile_actress_andrea.jpg"
+                  alt="actress andrea profile pic "
+                />
+              </div>
+              <span class="text-sm text-ellipsis">Andrea </span>
+            </a>
 
-          <!-- actress sam storie -->
-          <a href="#" class="grid place-items-center gap-y-2">
-            <div
-              class="w-[90px] rounded-full bg-gradient-to-b from-pink-500 to-yellow-400"
-            >
-              <img
-                class="rounded-full p-[2.5px]"
-                src="./dist/images/profile_actress_sam.jpg"
-                alt="actress sam profile pic "
-              />
+            <!-- actress sam storie -->
+            <a href="#" class="grid place-items-center gap-y-2">
+              <div
+                class="w-[90px] rounded-full bg-gradient-to-b from-pink-500 to-yellow-400"
+              >
+                <img
+                  class="rounded-full p-[2.5px]"
+                  src="./dist/images/profile_actress_sam.jpg"
+                  alt="actress sam profile pic "
+                />
+              </div>
+              <span class="text-sm text-ellipsis">Samantha </span>
+            </a>
+          </div>
+        </section>
+        <!-- header stories -->
+        <!-- posts sections -->
+        <section class="bg-zinc-800 text-white">
+          <div class="p-4">
+            <!-- post header -->
+            <div class="flex justify-between items-center pb-4">
+              <!-- profile and id  -->
+              <div class="flex items-center gap-x-2">
+                <img
+                  class="w-14 rounded-full border-2 border-green-500 p-[2.5px]"
+                  src="./dist/images/profile_actor_vijay.jpg"
+                  alt="actor vijay profile pic "
+                />
+                <a href="#" class="font-medium">actorvijay</a>
+                <!-- verified badge -->
+                <svg
+                  class="text-blue-500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    fill="currentColor"
+                    d="m8.6 22.5l-1.9-3.2l-3.6-.8l.35-3.7L1 12l2.45-2.8l-.35-3.7l3.6-.8l1.9-3.2L12 2.95l3.4-1.45l1.9 3.2l3.6.8l-.35 3.7L23 12l-2.45 2.8l.35 3.7l-3.6.8l-1.9 3.2l-3.4-1.45l-3.4 1.45Zm2.35-6.95L16.6 9.9l-1.4-1.45l-4.25 4.25l-2.15-2.1L7.4 12l3.55 3.55Z"
+                  />
+                </svg>
+                <!-- verified badge -->
+                <!-- follow -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M156 128a28 28 0 1 1-28-28a28 28 0 0 1 28 28Z"
+                  />
+                </svg>
+                <a href="#">Following</a>
+                <!-- follow -->
+              </div>
+              <!-- tree dots -->
+              <a href="#">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    fill="currentColor"
+                    d="M156 128a28 28 0 1 1-28-28a28 28 0 0 1 28 28ZM48 100a28 28 0 1 0 28 28a28 28 0 0 0-28-28Zm160 0a28 28 0 1 0 28 28a28 28 0 0 0-28-28Z"
+                  />
+                </svg>
+              </a>
             </div>
-            <span class="text-sm text-ellipsis">Samantha </span>
-          </a>
-        </div>
+            <!-- post header -->
+
+            <!-- media -->
+            <img
+              src="./dist/images/ig_post_leo_update.jpg"
+              alt="leo update poster  "
+            />
+            <!-- media -->
+
+            <!-- discription and likes -->
+            <div class="flex flex-col gap-y-[2px]">
+              <!-- likes, share, save btns -->
+              <div class="flex justify-between py-2">
+                <div class="flex gap-3 items-center">
+                  <!-- like -->
+                  <a href="#">
+                    <svg
+                      class="text-red-600"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="currentColor"
+                        d="m12 21l-1.45-1.3q-2.525-2.275-4.175-3.925T3.75 12.812Q2.775 11.5 2.388 10.4T2 8.15Q2 5.8 3.575 4.225T7.5 2.65q1.3 0 2.475.55T12 4.75q.85-1 2.025-1.55t2.475-.55q2.35 0 3.925 1.575T22 8.15q0 1.15-.388 2.25t-1.362 2.412q-.975 1.313-2.625 2.963T13.45 19.7L12 21Z"
+                      />
+                    </svg>
+                  </a>
+                  <!-- comment -->
+                  <a href="#">
+                    <svg
+                      class="-rotate-90"
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="32"
+                      height="32"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="1.5"
+                        d="M12 21a9 9 0 1 0-9-9c0 1.488.36 2.89 1 4.127L3 21l4.873-1c1.236.639 2.64 1 4.127 1Z"
+                      />
+                    </svg>
+                  </a>
+                  <!-- share -->
+                  <a href="#">
+                    <svg
+                      aria-label="Share Post"
+                      class="x1lliihq x1n2onr6 __web-inspector-hide-shortcut__"
+                      color="rgb(245, 245, 245)"
+                      fill="rgb(245, 245, 245)"
+                      height="30"
+                      width="30"
+                      role="img"
+                      viewBox="0 0 24 24"
+                    >
+                      <title>Share Post</title>
+                      <line
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        x1="22"
+                        x2="9.218"
+                        y1="3"
+                        y2="10.083"
+                      ></line>
+                      <polygon
+                        fill="none"
+                        points="11.698 20.334 22 3.001 2 3.001 9.218 10.084 11.698 20.334"
+                        stroke="currentColor"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                      ></polygon>
+                    </svg>
+                  </a>
+                </div>
+                <!-- save -->
+                <svg
+                  aria-label="Save"
+                  class="x1lliihq x1n2onr6"
+                  color="rgb(245, 245, 245)"
+                  fill="rgb(245, 245, 245)"
+                  height="32"
+                  width="32"
+                  role="img"
+                  viewBox="0 0 24 24"
+                >
+                  <title>Save</title>
+                  <polygon
+                    fill="none"
+                    points="20 21 12 13.44 4 21 4 3 20 3 20 21"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                  ></polygon>
+                </svg>
+              </div>
+              <!-- likes, share, save btns -->
+
+              <!-- text -->
+              <span class="font-medium">2,300,616 likes</span>
+              <span
+                ><a href="#" class="text-sm font-medium">actorvijay </a>
+                <span class="font-light"> #LeoTrailerFromOct5</span>
+              </span>
+              <span class="font-light text-xs text-gray-200"
+                >View all 52,900 comments</span
+              >
+              <span class="font-light text-xs text-gray-200">1 DAY AGO</span>
+              <!-- text -->
+            </div>
+
+            <!-- discription and likes -->
+          </div>
+        </section>
+        <!-- posts sections -->
       </section>
-      <!-- header stories -->
-      <!-- header -->
+      <!-- body section -->
     </main>
   </body>
 </html>
