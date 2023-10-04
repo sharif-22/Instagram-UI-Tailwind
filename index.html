@@ -11,12 +11,32 @@
       type="image/x-icon"
     />
 
-    <!-- Tailwind css output dist  -->
-    <link rel="stylesheet" href="./dist/assets/index-a591ef8f.css" />
-
     <!-- tailwind css dev  -->
     <!-- <link rel="stylesheet" href="./public/styles/index.css" /> -->
+
+    <!-- Tailwind css output dist  -->
+    <link rel="stylesheet" href="./dist/assets/index-b4a66553.css" />
+
     <style>
+      /* Scroll styles  */
+      .horizontal-scroll-bar::-webkit-scrollbar {
+        /* width: auto; */
+        height: 24px;
+        background-color: #18181b;
+        margin-inline: 2rem;
+        cursor: grab;
+      }
+      .horizontal-scroll-bar::-webkit-scrollbar-thumb {
+        background: #27272a;
+        border: 3px solid #18181b;
+        border-radius: 100vh;
+        cursor: grab;
+      }
+      .horizontal-scroll-bar::-webkit-scrollbar-thumb:hover {
+        cursor: grabbing;
+        background-color: #393939;
+      }
+
       .no-scroll-bar::-webkit-scrollbar {
         display: none;
       }
@@ -123,7 +143,7 @@
         <section class="bg-zinc-800">
           <!-- stories items -->
           <div
-            class="py-4 text-white relative flex gap-3 overflow-x-scroll owl-carousel owl-theme"
+            class="py-4 text-white relative flex gap-3 overflow-x-scroll horizontal-scroll-bar"
           >
             <!-- my stories -->
             <a href="#" class="grid place-items-center gap-y-2 relative">
