@@ -12,7 +12,7 @@
 
 ## Description
 
-I buid a UI clone of Instagram mobile app using HTML and Tailwind CSS
+I build a UI clone of Instagram mobile app using HTML and Tailwind CSS
 
 ## Demo
 
@@ -37,33 +37,25 @@ This internship is provided by [CyberDude Networks Pvt. Ltd.](https://youtube.co
 <h3>Clone the Repository:</h3>
 
 ```
-
 git clone https://github.com/sharif-22/Instagram-UI-Tailwind
-
 ```
 
 Navigate to the project
 
 ```
-
 cd Instagram-UI-Tailwind
-
 ```
 
 Install the Dependencies
 
 ```
-
 npm install
-
 ```
 
 Run the Project
 
 ```
-
 npm run dev
-
 ```
 
 ## License
