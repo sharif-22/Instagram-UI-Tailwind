@@ -69,7 +69,3 @@ npm run dev
 ## License
 
 [MIT](./LICENCE.md)
-
-```
-
-```
