@@ -1,3 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.story {
+  @apply grid place-items-center gap-y-2;
+}
+
+.story-public {
+  @apply w-[90px] rounded-full bg-gradient-to-b from-pink-500 to-yellow-400 p-0.5;
+}
+.story-public__img {
+  @apply inline-block border-4 border-zinc-800;
+}
+
+.story-private {
+  @apply w-[90px] rounded-full border-2 border-green-500 p-1;
+}
