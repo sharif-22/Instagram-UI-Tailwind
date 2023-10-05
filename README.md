@@ -29,6 +29,7 @@ This internship is provided by [CyberDude Networks Pvt. Ltd.](https://youtube.co
 <ol>
     <li>HTML</li>
     <li>Tailwind CSS</li>
+    <li>Bootstrap Components </li>
     <li>Vite </li>
 </ol>
 
